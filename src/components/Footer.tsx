@@ -1,11 +1,12 @@
+
 import React from 'react';
 import Link from 'next/link';
-import type { LucideIcon } from 'lucide-react';
+import { Icon, IconName } from './Icon';
 
 interface SocialLink {
   name: string;
   url: string;
-  icon: LucideIcon;
+  icon: IconName;
 }
 
 interface FooterProps {
@@ -24,7 +25,7 @@ const Footer: React.FC<FooterProps> = ({ socialLinks }) => {
           <div className="flex items-center gap-4">
             {socialLinks.map((link) => (
               <Link key={link.name} href={link.url} target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-primary">
-                <link.icon className="h-6 w-6" />
+                <Icon name={link.icon} className="h-6 w-6" />
                 <span className="sr-only">{link.name}</span>
               </Link>
             ))}

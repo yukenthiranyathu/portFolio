@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail, Phone } from 'lucide-react';
+
+import type { IconName } from '@/components/Icon';
 
 export const portfolioData = {
   profile: {
@@ -10,10 +11,10 @@ export const portfolioData = {
     bio: "A passionate Full-Stack Developer from the vibrant island of Sri Lanka, with a knack for building robust and scalable web applications. I thrive on turning complex problems into simple, beautiful, and intuitive designs. When I'm not coding, you can find me exploring the latest tech trends or enjoying a cup of Ceylon tea.",
     avatar: "https://placehold.co/400x400.png",
     socialLinks: [
-      { name: "GitHub", url: "https://github.com", icon: Github },
-      { name: "LinkedIn", url: "https://linkedin.com", icon: Linkedin },
-      { name: "Email", url: "mailto:sahan.dev@email.com", icon: Mail },
-      { name: "Phone", url: "tel:+94771234567", icon: Phone },
+      { name: "GitHub", url: "https://github.com", icon: "Github" as IconName },
+      { name: "LinkedIn", url: "https://linkedin.com", icon: "Linkedin" as IconName },
+      { name: "Email", url: "mailto:sahan.dev@email.com", icon: "Mail" as IconName },
+      { name: "Phone", url: "tel:+94771234567", icon: "Phone" as IconName },
     ],
   },
   skills: [
